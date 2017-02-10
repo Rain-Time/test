@@ -2,14 +2,14 @@
 <XML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <run>false</run>
   <on>true</on>
-  <runPWD>false</runPWD>
-  <PWD>123456</PWD>
+  <runPWD>true</runPWD>
+  <PWD>888888</PWD>
   <times>0</times>
   <wait>20</wait>
   <IP>www.google.com,www.baidu.com</IP>
-  <timeout>8000</timeout>
+  <timeout>1300</timeout>
   <interval>120</interval>
-  <ConnectName>SaroGPRS</ConnectName>
+  <ConnectName>PowerGPRS</ConnectName>
   <username>CARD</username>
   <password>CARD</password>
 </XML>
