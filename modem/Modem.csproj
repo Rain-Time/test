@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1071C3C0-99AA-4CC1-BD07-CD4E42B6E9D8}</ProjectGuid>
+    <SchemaVersion>2</SchemaVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Modem</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Modem.Form1</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Modem</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modem\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Settings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Monitor.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My.CommBase\CommBase.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My.CommBase\CommPingPong.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\ComEvent.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Class1.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\SetDefaultConnection.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\PBK.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\XML.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Precedence.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Delay.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Throughput.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Reliability.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Protocol.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\Packet.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\SetTextCallBack.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\InstallMainClass.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\log.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My.CommBase\CommLine.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My.CommBase\CommPortException.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="My.CommBase\Win32Com.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\DialManager.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\NotifyIconEx.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modem\DialClass.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\PigTao.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modem\SetupForm.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modem\DialForm.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modem\Settings.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modem\Form1.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modem\about.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modem\help.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modem\PWDForm.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Modem\SetupForm.resx">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modem\DialForm.resx">
+      <DependentUpon>DialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modem\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modem\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modem\about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modem\help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modem\PWDForm.resx">
+      <DependentUpon>PWDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
